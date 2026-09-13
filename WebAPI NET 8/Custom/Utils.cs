@@ -32,7 +32,7 @@ namespace WebAPI_NET_8.Custom
 
         public string generateJWT(Usuario model)
         {
-            // crearte user information token
+            // create user information token
             var userClaims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier,model.IdUsuario.ToString()),
